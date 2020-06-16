@@ -14,7 +14,7 @@ public class OrderServiceProxy implements OrderService {
      * 1.实现静态代理
      */
     @Override
-    public void order() {
+    public void order() throws Throwable {
         System.out.println(">>>打印订单日志开始");
         orderService.order();//执行order业务逻辑
         System.out.println(">>>打印订单日志结束");
